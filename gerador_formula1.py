@@ -2,7 +2,7 @@
 Algoritmo para gerar a ordem de chegada de pilotos na temporada de 2021 da Formula 1.
 """
 
-from itertools import combinations
+from itertools import permutations
 
 lista_pilotos = [
     'Verstappen',
@@ -22,15 +22,12 @@ lista_pilotos = [
     'Russell',
     'Latifi',
     'Raikkonen',
-    'Giovinazzi',
-    'Schumacher',
-    'Mazepin',
-    'Kubica'
+    'Giovinazzi'
 ]
 
 n_pos = int(input("Insira o número de posições a ser geradas: "))
 
-lista = [', '.join(x) for x in combinations(lista_pilotos, n_pos)]
+lista = [', '.join(x) for x in permutations(lista_pilotos, n_pos)]
 
 arquivo = open("lista.txt","w")
 for pos in lista:
