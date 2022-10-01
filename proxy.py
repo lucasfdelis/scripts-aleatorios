@@ -1,5 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
+
+
 l={}
 u=list()
 url="https://www.proxynova.com/proxy-server-list/country-br/"
