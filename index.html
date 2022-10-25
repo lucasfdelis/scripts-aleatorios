@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de moedas</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    <header>Conversor de moedas</header>
+
+    <div class="quantia">
+      <p>Insira uma quantia em Reais</p>
+      <input type="text" name="n1" value="1" id="n1">
+    </div>
+
+    <div class="form">
+      <div class="opcoes">
+
+        <div class="para">
+          <p>Para</p>
+          <div class="select" id='para'>
+            <select name="op" class="op" id="op">
+              <option value="USD">USD</option> <!-- Dólar Americano -->
+              <option value="JPY">JPY</option> <!-- Iene -->
+              <option value="RUB">RUB</option> <!-- Rublo Russo-->
+              <option value="ARS">ARS</option> <!-- Peso Argentino -->
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="valor-conversao" id='resFinal'>
+        <p>Resultado</p>
+      </div>
+      <button id='botao'>Realizar conversão</button>
+    </div>
+    <p>Conversor com base nos valores do dia 30/08/2022.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
