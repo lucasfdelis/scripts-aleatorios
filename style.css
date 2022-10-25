@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #295270, #524175);
+}
+
+.main{
+    width: 370px;
+    padding: 30px;
+    border-radius: 4px;
+    background-color: #FFF;
+}
+
+.main header{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.main #form{
+    margin: 40px 0 20px 0;
+}
+
+.form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+
+.form p{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.form input{
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+}
+
+.form input:focus{
+    border: 2px solid #524175;
+}
+
+.form .opcoes{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opcoes select{
+    font-size: 16px;
+    padding: 5px 20px;
+}
+
+.form .valor-conversao{
+    font-size: 17px;
+    margin: 20px 0 30px;
+}
+
+.form button{
+    height: 52px;
+    color: #FFF;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #524175;
+    border: none;
+}
